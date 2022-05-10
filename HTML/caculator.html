@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:result="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<h2>Calculator</h2>
+<input type="text" id="number1">
+<input type="text" id="number2">
+<button onclick="Add()"> Add(+)</button>
+<button onclick="sub()" >Sub(-)</button>
+<button onclick="Multi()">Multi(*)</button>
+<button onclick="div()">Div(/)</button>
+<p>result: <span id="result"></span></p>
+
+</body>
+<script>
+    function Add()
+    {
+        let number1=parseFloat(document.getElementById("number1").value)
+        let number2=parseFloat(document.getElementById("number2").value)
+        document.getElementById("result").innerHTML=(number1+number2)
+    }
+    function sub(){
+        let number1=parseFloat(document.getElementById("number1").value)
+        let number2=parseFloat(document.getElementById("number2").value)
+        document.getElementById("result").innerHTML=(number1-number2)
+    }
+    function Multi(){
+        let number1=parseFloat(document.getElementById("number1").value)
+        let number2=parseFloat(document.getElementById("number2").value)
+        document.getElementById("result").innerHTML=(number1*number2)
+    }
+    function div(){
+        let number1=parseFloat(document.getElementById("number1").value)
+        let number2=parseFloat(document.getElementById("number2").value)
+        document.getElementById("result").innerHTML=(number1/number2)
+    }
+</script>
+</html>
